@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+
+<data>
+    <record model="ir.ui.view" id="project_partners_form">
+        <field name="name">project_partners.form</field>
+        <field name="inherit_id" ref="project.edit_project"/>
+        <field name="model">project.project</field>
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="//page[@name='project_stages']" position="after">
+                    <page string="Partners">
+                        <group>
+                            <newline />
+                            <field name="partners" />
+                        </group>
+                    </page>
+                </xpath>
+            </data>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="project_partners_task_form">
+        <field name="name">project_partners.task.form</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="model">project.task</field>
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="//page[@string='Extra Info']" position="after">
+                    <page string="Partners">
+                        <form string="Partners">
+                            <group>
+                                <newline />
+                                <field name="partners"  context="{'project_partners': project_id}" />
+                            </group>
+                        </form>
+                    </page>
+                </xpath>
+            </data>
+        </field>
+    </record>
+</data>
+</openerp>
