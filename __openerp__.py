@@ -1,5 +1,6 @@
 {
     'name': "Project Partners",
+    'author' : 'Stéphane Codazzi @ TeMPO-Consulting',
     'category': 'Project',
     'description': """
 Project Partners
