@@ -6,16 +6,6 @@ from lxml import etree as ET
 class project_partners_partners(osv.Model):
     _inherit = 'res.partner'
 
-    """def search(self, cr, uid, domain, offset=0, limit=None, order=None, 
-        context=None, count=False):
-
-        print " ICI PRINT"
-        print domain
-        res = super(project_partners_partners, self).\
-            search(cr, uid, domain, offset=offset, limit=limit, order=order,
-                context=context, count=count)
-        return res"""
-
     _columns = {
         'project_partners_projects': fields.many2many(
             'project.project',
