@@ -31,7 +31,7 @@
                         <form string="Partners">
                             <group>
                                 <newline />
-                                <field name="partners"  domain="[('project_partners_projects', '=', project_id)]" context="{'project_partners': project_id}" />
+                                <field name="partners"  domain="[('project_partners_projects', '=', project_id)]"/>
                             </group>
                         </form>
                     </page>
