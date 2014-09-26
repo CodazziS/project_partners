@@ -21,6 +21,7 @@ class project_partners_partners(osv.Model):
             'Tasks'),
     }
 
+
 class project_partners_project(osv.Model):
     _inherit = 'project.project'
 
